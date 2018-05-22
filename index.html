@@ -239,6 +239,379 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/22/unity学习笔记4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frost">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Frost的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/22/unity学习笔记4/" itemprop="url">unity学习笔记4</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-22T21:09:35+08:00">
+                2018-05-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>Unity3D中的碰撞：</strong><br>在unity中，有普通碰撞体Collider和触发器（Trigger）两种碰撞体，两个普通碰撞体会发生碰撞并产生力学现象，触发器则像是个无法触碰而又真实存在的东西，也会触发碰撞事件，但另一个物体会穿过它，碰撞发生的前提是两碰撞体有一方携带刚体（Rigidbody）组件。<br>物体对碰撞体进行处理的三个函数：<br>void OnCollisionEnter(Collision collision)；//当碰撞体进入当前物体时触发的回调函数<br>void OnCollisionStay(Collision collision)；//当碰撞体停留当前物体内时触发的回调函数<br>void OnCollisionExit(Collision collision)；//当碰撞体离开当前物体时触发的回调函数<br>物体对触发器进行处理的三个函数：<br>void OnTriggerEnter(Collider other)；//当触发器进入当前物体时触发的回调函数<br>void OnTriggerStay(Collider other)；//当触发器停留在当前物体时触发的回调函数<br>void OnTriggerExit(Collider other)；//当触发器离开当前物体时触发的回调函数</p>
+<p><strong>Unity2D中的碰撞：</strong><br>概念和Unity3D大致相同<br>物体对2D碰撞体进行处理的三个函数：<br>void OnCollisionEnter2D(Collision collision)；//当2D碰撞体进入当前物体时触发的回调函数<br>void OnCollisionStay2D(Collision collision)；//当2D碰撞体停留当前物体内时触发的回调函数<br>void OnCollisionExit2D(Collision collision)；//当2D碰撞体离开当前物体时触发的回调函数<br>物体对2D触发器进行处理的三个函数：<br>void OnTriggerEnter2D(Collider other)；//当2D触发器进入当前物体时触发的回调函数<br>void OnTriggerStay2D(Collider other)；//当2D触发器停留在当前物体时触发的回调函数<br>void OnTriggerExit2D(Collider other)；//当2D触发器离开当前物体时触发的回调函数</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/22/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frost">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Frost的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/22/test/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-22T21:00:44+08:00">
+                2018-05-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="hexo的常用命令"><a href="#hexo的常用命令" class="headerlink" title="hexo的常用命令"></a>hexo的常用命令</h1><p>标签（空格分隔）： github hexo</p>
+<hr>
+<p>新建博客hexo new post “博文名”<br>生成静态页面 hexo g<br>上传到github hexo d</p>
+<pre><code>void Rotating(float h, float v)
+{
+    Vector3 targetDir = new Vector3(h, 0, v);
+    Quaternion targetRotation = Quaternion.LookRotation(targetDir, Vector3.up);
+    Rigidbody r = GetComponent&lt;Rigidbody&gt;();
+    Quaternion newRotation = Quaternion.Lerp(r.rotation, targetRotation,turnSmoothing * Time.deltaTime);
+    r.MoveRotation(newRotation);
+</code></pre><p>}</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/22/unity学习笔记3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frost">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Frost的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/22/unity学习笔记3/" itemprop="url">unity学习笔记3 一些常用API和应用场景</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-22T20:57:12+08:00">
+                2018-05-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Mathf.Lerp(float a,float b,float t)插值函数，当a &lt; b时往a中插入t,以此来实现颜色，声音等渐变效果。</p>
+<p>GameObject.FindWithTag(string tag)通过标签得到实例化的对象，实现跨脚本操作对象</p>
+<p>控制物体旋转相关：<br>Quaternion: 四元数<br>void Rotating(float h, float v)<br>{<br>    Vector3 targetDir = new Vector3(h, 0, v);<br>    Quaternion targetRotation = Quaternion.LookRotation(targetDir, Vector3.up);<br>    Rigidbody r = GetComponent<rigidbody>();<br>    Quaternion newRotation = Quaternion.Lerp(r.rotation, targetRotation, turnSmoothing * Time.deltaTime);<br>    r.MoveRotation(newRotation);<br>}<br>h为水平输入，v为垂直输入，该代码实现角色根据水平方向的输入旋转的功能</rigidbody></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/22/hexo的常用命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1006,7 +1379,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
