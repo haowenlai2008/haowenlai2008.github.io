@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="unity3D," />
+  <meta name="keywords" content="游戏开发 unity c#," />
 
 
 
@@ -79,18 +79,26 @@
 
 
 
-<meta name="description" content="Unity3D中的碰撞：在unity中，有普通碰撞体Collider和触发器（Trigger）两种碰撞体，两个普通碰撞体会发生碰撞并产生力学现象，触发器则像是个无法触碰而又真实存在的东西，也会触发碰撞事件，但另一个物体会穿过它，碰撞发生的前提是两碰撞体有一方携带刚体（Rigidbody）组件。物体对碰撞体进行处理的三个函数：void OnCollisionEnter(Collision colli">
-<meta name="keywords" content="unity3D">
+<meta name="description" content="##龙骨龙骨是Egret公司的一个用来做动画的软件，本文分享一下如何在Unity2D中使用龙骨导出的2D动画 ##导出动画在龙骨中文件-&amp;gt;导出，导出动画数据和纹理到Unity的项目中，如果打包了的话就在Unity的项目的目录下解压，解压后我们可以看到3个文件Animation_ske.json（骨骼配置)Animation_tke.json (图集配置)Animation_tex.png (">
+<meta name="keywords" content="游戏开发 unity c#">
 <meta property="og:type" content="article">
-<meta property="og:title" content="unity学习笔记4">
-<meta property="og:url" content="http://yoursite.com/2018/05/22/unity学习笔记4/index.html">
+<meta property="og:title" content="如何在unity中使用龙骨动画">
+<meta property="og:url" content="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/index.html">
 <meta property="og:site_name" content="Frost的博客">
-<meta property="og:description" content="Unity3D中的碰撞：在unity中，有普通碰撞体Collider和触发器（Trigger）两种碰撞体，两个普通碰撞体会发生碰撞并产生力学现象，触发器则像是个无法触碰而又真实存在的东西，也会触发碰撞事件，但另一个物体会穿过它，碰撞发生的前提是两碰撞体有一方携带刚体（Rigidbody）组件。物体对碰撞体进行处理的三个函数：void OnCollisionEnter(Collision colli">
+<meta property="og:description" content="##龙骨龙骨是Egret公司的一个用来做动画的软件，本文分享一下如何在Unity2D中使用龙骨导出的2D动画 ##导出动画在龙骨中文件-&amp;gt;导出，导出动画数据和纹理到Unity的项目中，如果打包了的话就在Unity的项目的目录下解压，解压后我们可以看到3个文件Animation_ske.json（骨骼配置)Animation_tke.json (图集配置)Animation_tex.png (">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-22T13:13:54.374Z">
+<meta property="og:image" content="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/龙骨界面.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/动画导出.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/导入插件.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/Armature.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/ArmatureIns.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/创建龙骨数据.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/character.png">
+<meta property="og:updated_time" content="2018-07-25T07:04:59.449Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="unity学习笔记4">
-<meta name="twitter:description" content="Unity3D中的碰撞：在unity中，有普通碰撞体Collider和触发器（Trigger）两种碰撞体，两个普通碰撞体会发生碰撞并产生力学现象，触发器则像是个无法触碰而又真实存在的东西，也会触发碰撞事件，但另一个物体会穿过它，碰撞发生的前提是两碰撞体有一方携带刚体（Rigidbody）组件。物体对碰撞体进行处理的三个函数：void OnCollisionEnter(Collision colli">
+<meta name="twitter:title" content="如何在unity中使用龙骨动画">
+<meta name="twitter:description" content="##龙骨龙骨是Egret公司的一个用来做动画的软件，本文分享一下如何在Unity2D中使用龙骨导出的2D动画 ##导出动画在龙骨中文件-&amp;gt;导出，导出动画数据和纹理到Unity的项目中，如果打包了的话就在Unity的项目的目录下解压，解压后我们可以看到3个文件Animation_ske.json（骨骼配置)Animation_tke.json (图集配置)Animation_tex.png (">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/龙骨界面.png">
 
 
 
@@ -120,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/22/unity学习笔记4/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/"/>
 
 
 
 
 
-  <title>unity学习笔记4 | Frost的博客</title>
+  <title>如何在unity中使用龙骨动画 | Frost的博客</title>
   
 
 
@@ -243,7 +251,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/22/unity学习笔记4/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/25/如何在unity中使用龙骨动画/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Frost">
@@ -260,7 +268,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">unity学习笔记4</h1>
+          <h1 class="post-title" itemprop="name headline">如何在unity中使用龙骨动画</h1>
         
 
         <div class="post-meta">
@@ -272,8 +280,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-22T21:09:35+08:00">
-                2018-05-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-25T13:50:16+08:00">
+                2018-07-25
               </time>
             
 
@@ -310,8 +318,12 @@
       
 
       
-        <p><strong>Unity3D中的碰撞：</strong><br>在unity中，有普通碰撞体Collider和触发器（Trigger）两种碰撞体，两个普通碰撞体会发生碰撞并产生力学现象，触发器则像是个无法触碰而又真实存在的东西，也会触发碰撞事件，但另一个物体会穿过它，碰撞发生的前提是两碰撞体有一方携带刚体（Rigidbody）组件。<br>物体对碰撞体进行处理的三个函数：<br>void OnCollisionEnter(Collision collision)；//当碰撞体进入当前物体时触发的回调函数<br>void OnCollisionStay(Collision collision)；//当碰撞体停留当前物体内时触发的回调函数<br>void OnCollisionExit(Collision collision)；//当碰撞体离开当前物体时触发的回调函数<br>物体对触发器进行处理的三个函数：<br>void OnTriggerEnter(Collider other)；//当触发器进入当前物体时触发的回调函数<br>void OnTriggerStay(Collider other)；//当触发器停留在当前物体时触发的回调函数<br>void OnTriggerExit(Collider other)；//当触发器离开当前物体时触发的回调函数</p>
-<p><strong>Unity2D中的碰撞：</strong><br>概念和Unity3D大致相同<br>物体对2D碰撞体进行处理的三个函数：<br>void OnCollisionEnter2D(Collision collision)；//当2D碰撞体进入当前物体时触发的回调函数<br>void OnCollisionStay2D(Collision collision)；//当2D碰撞体停留当前物体内时触发的回调函数<br>void OnCollisionExit2D(Collision collision)；//当2D碰撞体离开当前物体时触发的回调函数<br>物体对2D触发器进行处理的三个函数：<br>void OnTriggerEnter2D(Collider other)；//当2D触发器进入当前物体时触发的回调函数<br>void OnTriggerStay2D(Collider other)；//当2D触发器停留在当前物体时触发的回调函数<br>void OnTriggerExit2D(Collider other)；//当2D触发器离开当前物体时触发的回调函数</p>
+        <p>##龙骨<br>龙骨是Egret公司的一个用来做动画的软件，本文分享一下如何在Unity2D中使用龙骨导出的2D动画<br><img src="/2018/07/25/如何在unity中使用龙骨动画/龙骨界面.png" alt=""></p>
+<p>##导出动画<br><img src="/2018/07/25/如何在unity中使用龙骨动画/动画导出.png" alt=""><br>在龙骨中文件-&gt;导出，导出动画数据和纹理到Unity的项目中，如果打包了的话就在Unity的项目的目录下解压，解压后我们可以看到3个文件<br>Animation_ske.json（骨骼配置)<br>Animation_tke.json (图集配置)<br>Animation_tex.png (图集图片)<br>简单来讲，动画的数据在骨骼配置文件里，图集配置文件记录了图片的位置和路径</p>
+<p>##向Unity添加龙骨插件<br>要在Unity使用龙骨，必须要将龙骨的插件添加到项目里，这个插件是一个标准的UnityPackge，可以在<a href="http://blog.dragonbones.com/cn/release/dragonbones-for-unity-unity的龙骨插件.html" target="_blank" rel="noopener">龙骨官方博客</a>下载，下载完成后，在Unity Editor中，Assets-&gt;import package-&gt;custom package,选择刚刚下载好的<strong>DragonBonesForUnity.unitypackage</strong>文件,导入<br><img src="/2018/07/25/如何在unity中使用龙骨动画/导入插件.png" alt=""></p>
+<p>##在Unity中使用龙骨动画<br>终于回到正题了，首先在场景中创建一个DragonBones Armature Object, 导入龙骨的插件后可以在Hierarchy视图中右键看到DragonkBones这个选项，点击Armature Object<br><img src="/2018/07/25/如何在unity中使用龙骨动画/Armature.png" alt=""><br>创建成功，选中这个Armature对象，查看Inspector视图<br><img src="/2018/07/25/如何在unity中使用龙骨动画/ArmatureIns.png" alt=""><br>可以看到，这个对象自带一个UnityArmatureComponent组件，这个组件下有一个叫做龙骨数据(DragonBonesData)的属性，我们刚刚导出到项目里的龙骨动画明明是三个文件，这要怎么办呢？<br>在Unity的文件管理器中找到我们导出的龙骨动画的三个文件，将三个文件选中，右键Create-&gt;DragonBones-&gt;Create Unity Date<br><img src="/2018/07/25/如何在unity中使用龙骨动画/创建龙骨数据.png" alt=""><br>然后就可以看到三个文件的目录下多了一个Unity Data文件，将这个文件拖动到刚刚的UnityArmatureComponent组件中，并点击Create,可以在Scene中看到你的动画角色了<br><img src="/2018/07/25/如何在unity中使用龙骨动画/character.png" alt=""><br>至于UnityArmatureComponent中加载了龙骨数据后出现的属性都比较简单，就不一一讲解了，接下来讲一下播放动画的API</p>
+<p>##用脚本播放动画<br>创建一个脚本PlayerCtrl<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">using System.Collections;</span><br><span class="line">using System.Collections.Generic;</span><br><span class="line">using UnityEngine;</span><br><span class="line">public class PlayerCtl : MonoBehaviour </span><br><span class="line">&#123;</span><br><span class="line">	private DragonBones.UnityArmatureComponent unityArmature;//UnityArmatureComponent对象</span><br><span class="line">	void Start () </span><br><span class="line">	&#123;</span><br><span class="line">		unityArmature = GetComponent&lt;DragonBones.UnityArmatureComponent&gt;();//获得UnityArmatureComponent对象</span><br><span class="line">		unityArmature.Play(&quot;Idel&quot;);//播放动画</span><br><span class="line">	&#125;</span><br><span class="line">	void Update()</span><br><span class="line">	&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>将这个脚本绑定到角色上，角色就开始播放动画了，至于换装系统暂时还没接触到，这次先不讲吧</p>
 
       
     </div>
@@ -329,7 +341,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/unity3D/" rel="tag"># unity3D</a>
+            <a href="/tags/游戏开发-unity-c/" rel="tag"># 游戏开发 unity c#</a>
           
         </div>
       
@@ -342,8 +354,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/22/unity学习笔记3/" rel="next" title="unity学习笔记3 一些常用API和应用场景">
-                <i class="fa fa-chevron-left"></i> unity学习笔记3 一些常用API和应用场景
+              <a href="/2018/06/07/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
               </a>
             
           </div>
@@ -351,10 +363,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/22/Windows下cocos2d-x环境搭建/" rel="prev" title="Windows下cocos2d-x环境搭建">
-                Windows下cocos2d-x环境搭建 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
